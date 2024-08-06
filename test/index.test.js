@@ -59,4 +59,11 @@ describe("index.ts", () => {
     );
     expect(result).toEqual(false);
   });
+  test("Compare array with undefined", () => {
+    const result = isEqualArraysIgnoreOrder(
+      [{ el: { a: true, b: 18, c: "hello" } }, 4],
+      undefined
+    );
+    expect(result).toEqual(false);
+  });
 });

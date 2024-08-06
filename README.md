@@ -52,24 +52,37 @@ Autotests are used to test the function. In order to better understand the opera
 
 ```typescript
 isEqualArraysIgnoreOrder([], []) === true;
+
 isEqualArraysIgnoreOrder([], [1]) === false;
+
 isEqualArraysIgnoreOrder([2], [2]) === true;
+
 isEqualArraysIgnoreOrder([{ a: 1, b: 2 }], [{ a: 1, b: 2 }]) === true;
+
 isEqualArraysIgnoreOrder([{ a: "hi", b: true }], [{ b: true, a: "hi" }]) ===
   true;
+
 isEqualArraysIgnoreOrder([{ a: "hii", b: true }], [{ b: true, a: "hi" }]) ===
   false;
+
 isEqualArraysIgnoreOrder(
   [{ el: { a: true, b: 18, c: "hello" } }, 4, { s: 18, ff: { aa: { d: 7 } } }],
   [4, { s: 18, ff: { aa: { d: 7 } } }, { el: { b: 18, c: "hello", a: true } }]
 ) === true;
+
 isEqualArraysIgnoreOrder(
   [{ el: { a: true, b: 18, c: "hello" } }, 4],
   [4, { el: { b: 5, c: "hello", a: true } }]
 ) === false;
+
 isEqualArraysIgnoreOrder(
   [{ el: { a: true, b: 18, c: "hello" } }, 4],
   [4, { el: { b: 18, c: "hello", a: true } }, 1]
+) === false;
+
+isEqualArraysIgnoreOrder(
+  [{ el: { a: true, b: 18, c: "hello" } }, 4],
+  undefined
 ) === false;
 ```
 
