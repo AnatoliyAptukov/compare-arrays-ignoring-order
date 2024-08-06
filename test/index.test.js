@@ -52,4 +52,11 @@ describe("index.ts", () => {
     );
     expect(result).toEqual(false);
   });
+  test('Compare two non-empty arrays with more deep jumbled and different count of elements: isEqualArraysIgnoreOrder([{ el: { a: true, b: 18, c: "hello" } }, 4], [4, { el: { b:18, c: "hello", a: true } },1])', () => {
+    const result = isEqualArraysIgnoreOrder(
+      [{ el: { a: true, b: 18, c: "hello" } }, 4],
+      [4, { el: { b: 18, c: "hello", a: true } }, 1]
+    );
+    expect(result).toEqual(false);
+  });
 });
