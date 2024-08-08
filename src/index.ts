@@ -1,5 +1,6 @@
 // A custom function that can compare two values of any type
-export default function isEqualArraysIgnoreOrder(a: any, b: any) {
+export default isEqualArraysIgnoreOrder
+function isEqualArraysIgnoreOrder(a: any, b: any): boolean {
     // if the values are strictly equal, return true
     if (a === b) {
         return true;
