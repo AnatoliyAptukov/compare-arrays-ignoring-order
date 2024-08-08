@@ -1,6 +1,6 @@
 {
   "name": "compare-arrays-ignoring-order",
-  "version": "1.8.0",
+  "version": "1.10.0",
   "description": "This is a very simple library containing a function that allows you to compare arrays ignoring their order. This means that if two arrays have some elements mixed up, the function will return true.",
   "main": "./dist/index.js",
   "type": "module",

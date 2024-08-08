@@ -1,4 +1,4 @@
-import { isEqualArraysIgnoreOrder } from "../dist/index";
+import isEqualArraysIgnoreOrder from "../dist/index";
 describe("index.ts", () => {
   test("Compare two empty arrays: isEqualArraysIgnoreOrder([], [])", () => {
     const result = isEqualArraysIgnoreOrder([], []);
