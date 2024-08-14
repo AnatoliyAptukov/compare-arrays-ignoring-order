@@ -3,7 +3,6 @@
   "version": "1.10.0",
   "description": "This is a very simple library containing a function that allows you to compare arrays ignoring their order. This means that if two arrays have some elements mixed up, the function will return true.",
   "main": "./dist/index.js",
-  "type": "module",
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
@@ -34,6 +33,7 @@
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",
+    "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   },
   "files": [

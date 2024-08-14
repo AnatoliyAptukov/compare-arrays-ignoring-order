@@ -1,6 +1,6 @@
+'use strict'
 // A custom function that can compare two values of any type
-export default isEqualArraysIgnoreOrder
-function isEqualArraysIgnoreOrder(a: any, b: any): boolean {
+module.exports = function isEqualArraysIgnoreOrder(a: any, b: any): boolean {
     // if the values are strictly equal, return true
     if (a === b) {
         return true;
